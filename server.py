@@ -11,7 +11,7 @@ def emotion_detector():
 
     if response is None:
 
-        return "Invalid input! Try again."
+        return "Invalid text! Please try again."
 
     else:
 

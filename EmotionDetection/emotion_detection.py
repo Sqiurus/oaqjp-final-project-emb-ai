@@ -13,6 +13,9 @@ def emotion_detector(text_to_analyse):
         max_scored = max(formatted_response, key = formatted_response.get)
         formatted_response['dominant_emotion'] = max_scored
 
+    elif response.status_code == 500:
+        formatted_response = Noneformatted_response = None
+        
     else:
         formatted_response = None
 
